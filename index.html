@@ -3,7 +3,7 @@
 <head>
 
     <title>Barber shop</title>
-    <link rel="stylesheet" href="Barber shop.css">
+    <link rel="stylesheet" href="Barber shop.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width =device-width,initial-scale=1">
@@ -25,20 +25,21 @@
    
   
  </section>
- <div class="sidenav">
+ <div class="sidenav" id="sidenav">
 <nav>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Features</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Testimonials</a></li>
-    <li><a href="#">Meet us</a></li>
+    <li><a href="#banner">Home</a></li>
+    <li><a href="#third-section">Services</a></li>
+    <li><a href="#features-sec">Feature</a></li>
+    <li><a href="#Testimonials">Testimonials</a></li>
+    <li><a href="#Footer">Contact</a></li>
   </ul>
     
 </nav>
-<div class="menu">
-  <img src="Images/menu.png">
-  </div>
+ </div>
+
+ <div class="menu" id="menu-btn" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false" aria-controls="sidenav">
+  <img src="Images/menu.png" alt="menu">
  </div>
 
      <section id="features-sec">
@@ -84,7 +85,7 @@
   </div>
 
     <div class="feature-image">
-      <img src="Images/barber-man.jpg"
+      <img src="Images/barber-man.jpg" alt="Barber">
     </div>
 
   </div>
@@ -246,6 +247,8 @@
    
 
 </section>
+
+<script src="script.js?v=1"></script>
 </body>
 
 </html>
